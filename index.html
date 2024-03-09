@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicine Reminder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Medicine Reminder</h1>
+    <div id="clock"></div>
+    <form id="medicineForm">
+      <label for="medicineName">Medicine Name:</label>
+      <input type="text" id="medicineName" required>
+      
+      <label for="medicineType">Medicine Type:</label>
+      <select id="medicineType" required>
+        <option value="" disabled selected>Select Medicine Type</option>
+        <option value="adhesive(s)">Adhesive(s)</option>
+        <option value="capsule(s)">Capsule(s)</option>
+        <option value="cachet(s)">Cachet(s)</option>
+        <option value="cream">Cream(s)</option>
+        <option value="dragee">Dragee(s)</option>
+        <option value="emulsion">Emulsion(s)</option>
+        <option value="pack">Pack(s)</option>
+        <option value="gel">Gel(s)</option>
+        <option value="drop">Drop(s)</option>
+        <option value="inhalation">Inhalation(s)</option>
+        <option value="shot">Shot(s)</option>
+        <option value="lotion">Lotion(s)</option>
+        <option value="measure">Measure(s)</option>
+        <option value="tablet">Tablet(s)</option>
+        <option value="powder">Powder(s)</option>
+        <option value="ointment">Ointment(s)</option>
+        <option value="soap">Soap(s)</option>
+        <option value="sachet">Sachet(s)</option>
+        <option value="unit">Unit(s)</option>
+        <option value="solution">Solution(s)</option>
+        <option value="spray">Spray(s)</option>
+        <option value="suspension">Suspension(s)</option>
+        <option value="syrup">Syrup(s)</option>
+        <!-- Add other medicine types here -->
+      </select>
+      
+      <label for="reminderTime">Reminder Time:</label>
+      <input type="time" id="reminderTime" required>
+      
+      <button type="submit">Set Reminder</button>
+    </form>
+    <div id="reminderList"></div>
+    <audio id="alarmAudio" src="Assets/audio.mp3"></audio>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
